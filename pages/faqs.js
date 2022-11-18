@@ -46,6 +46,8 @@ const faqs = [
 export default function Home() {
     return (
         <div>
+
+            <canvas id="c"></canvas>
             <Title sub_title='Information' title='FAQs' description= 'Everything you need to know'/>
             <div>
                 <div className="mx-auto max-w-7xl pb-12 px-4 sm:pb-16 sm:px-6 lg:px-8">
@@ -56,8 +58,8 @@ export default function Home() {
                                     {({ open }) => (
                                         <>
                                             <dt className="text-lg">
-                                                <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-400">
-                                                    <span className="font-medium text-gray-900">{faq.question}</span>
+                                                <Disclosure.Button className="flex w-full items-start justify-between text-left text-white">
+                                                    <span className="font-medium text-white">{faq.question}</span>
                                                     <span className="ml-6 flex h-7 items-center">
                           <ChevronDownIcon
                               className={(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
@@ -67,7 +69,7 @@ export default function Home() {
                                                 </Disclosure.Button>
                                             </dt>
                                             <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                                                <p className="text-base text-gray-500">{faq.answer}</p>
+                                                <p className="text-base text-gray-50">{faq.answer}</p>
                                             </Disclosure.Panel>
                                         </>
                                     )}

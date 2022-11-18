@@ -14,6 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+        <canvas id="c"></canvas>
         <Title sub_title='Welcome' title='Home' description= 'Building An Electric Vehicle Charging Network, Shared By Billions.'/>
     </div>
   )
