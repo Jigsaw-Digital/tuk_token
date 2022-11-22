@@ -46,10 +46,8 @@ const faqs = [
 export default function Home() {
     return (
         <div>
-
-            <canvas id="c"></canvas>
             <Title sub_title='Information' title='FAQs' description= 'Everything you need to know'/>
-            <div>
+            <div className="bg-[#2b3233]">
                 <div className="mx-auto max-w-7xl pb-12 px-4 sm:pb-16 sm:px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl divide-y-2 divide-gray-200">
                         <dl className="mt-0 space-y-6 divide-y divide-gray-200">
