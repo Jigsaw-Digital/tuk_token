@@ -5,9 +5,9 @@ html {
     font-family: 'Signika', sans-serif;
 }
 
-* {
-    outline: 1px solid #e0e0e00d;
-}
+/** {*/
+/*    outline: 1px solid #e0e0e00d;*/
+/*}*/
 
 body {
     /*overflow-x: hidden;*/
