@@ -2,7 +2,7 @@
 
 html {
     background-color: #131b1b;
-    font-family: 'Signika', sans-serif;
+    font-family: "myriad-pro", sans-serif;
 }
 
 /** {*/
@@ -11,6 +11,7 @@ html {
 
 body {
     /*overflow-x: hidden;*/
+    font-family: "myriad-pro", sans-serif;
 }
 
 
@@ -84,43 +85,43 @@ nav .vault a:hover {
 
 @media (min-width: 992px) {
     .tuk-container {
-        width: 970px;
+        width: 870px;
     }
 }
 
 @media (min-width: 1200px) {
     .tuk-container {
-        width: 1170px;
+        width: 1070px;
     }
 }
 
 @media (min-width: 1300px) {
     .tuk-container {
-        width: 1270px;
+        width: 1070px;
     }
 }
 
 @media (min-width: 1400px) {
     .tuk-container {
-        width: 1370px;
+        width: 1170px;
     }
 }
 
 @media (min-width: 1500px) {
     .tuk-container {
-        width: 1470px;
+        width: 1270px;
     }
 }
 
 @media (min-width: 1600px) {
     .tuk-container {
-        width: 1570px;
+        width: 1370px;
     }
 }
 
 @media (min-width: 1700px) {
     .tuk-container {
-        width: 1670px;
+        width: 1470px;
     }
 }
 
@@ -340,7 +341,7 @@ nav .vault a:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    /*margin-bottom: 200px;*/
 }
 
 @media (max-width: 768px) {
@@ -798,12 +799,12 @@ footer img {
 }
 
 .footer-token {
-    width: 450px;
+    width: 350px;
     margin: 300px auto;
 }
 
 .footer-token img {
-    width: 450px;
+    width: 350px;
 }
 
 @media (max-width: 768px) {
