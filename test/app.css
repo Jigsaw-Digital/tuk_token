@@ -61,7 +61,7 @@ nav .vault a:hover {
     color: #05a6dd;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     nav .vault a {
         font-size: 16px;
         padding: 7px 32px;
@@ -77,49 +77,49 @@ nav .vault a:hover {
     margin-left: auto;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .tuk-container {
         width: 750px;
     }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .tuk-container {
         width: 870px;
     }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .tuk-container {
         width: 1070px;
     }
 }
 
-@media (min-width: 1300px) {
+@media only screen and (min-width: 1300px) {
     .tuk-container {
         width: 1070px;
     }
 }
 
-@media (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
     .tuk-container {
         width: 1170px;
     }
 }
 
-@media (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
     .tuk-container {
         width: 1270px;
     }
 }
 
-@media (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
     .tuk-container {
         width: 1370px;
     }
 }
 
-@media (min-width: 1700px) {
+@media only screen and (min-width: 1700px) {
     .tuk-container {
         width: 1470px;
     }
@@ -226,7 +226,7 @@ nav .vault a:hover {
     margin-top: 300px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .bg-hero-title {
         margin-top: 150px !important;
     }
@@ -328,7 +328,7 @@ nav .vault a:hover {
     -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .gradient-title {
         font-size: 36px !important;
     }
@@ -344,7 +344,7 @@ nav .vault a:hover {
     /*margin-bottom: 200px;*/
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .title-container {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -358,7 +358,7 @@ nav .vault a:hover {
     font-size: 21px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .title-support {
         line-height: 30px;
         font-size: 18px;
@@ -428,7 +428,7 @@ p {
     margin-top: 0;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .flexbox > div {
         width: 100%;
         margin-bottom: 30px;
@@ -448,7 +448,7 @@ p {
     margin-bottom: 250px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .box-container {
         margin-top: 100px;
         margin-bottom: 100px;
@@ -666,7 +666,7 @@ p {
     color: #8cc63f
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .network-title, .earn-title {
         font-size: 36px !important;
     }
@@ -736,7 +736,7 @@ p {
     margin-left: 10%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .image_icon {
         width: 70%;
         margin-left: 15%;
@@ -807,7 +807,7 @@ footer img {
     width: 350px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .footer-token {
         width: 150px;
         margin: 100px auto;
@@ -829,7 +829,7 @@ footer img {
 
 /** Responsive **/
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .hidden-sm {
         display: none;
     }
