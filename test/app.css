@@ -20,12 +20,17 @@ body {
 nav {
     position: fixed;
     left: 0px;
-    height: 100px;
+    height: 70px;
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 30px;
     z-index: 99999999;
+    top:0px;
+}
+
+.nav-bg {
+    background-color: #131b1b;
 }
 
 nav .menu {
@@ -132,7 +137,100 @@ nav .vault a:hover {
 
 
 
+/** Timeline **/
+
+.timeline {
+    /*margin-top: -100px;*/
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        margin: 100px 0;
+    }
+
+    .tuktuk {
+        height: 75px!important;
+    }
+}
+
+
+.green-container {
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+    width: 200px;
+    z-index: 999;
+}
+
+.blue-container {
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+}
+
+.green-line {
+    width: 0px;
+}
+
+.tuktuk {
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    z-index: 9999;
+    top: calc(50% - 55px);
+}
+
+.bg-hero-title {
+    float: left;
+    text-align: left;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 300px;
+}
+
+.bg-hero-title .title-container, .bg-hero-title .title-support {
+    text-align: left;
+    margin-left: 0px;
+    width: unset;
+}
+
+.text-s-container {
+    position: relative;
+    /*height: 100vh;*/
+    margin-top: -575px;
+    padding-top: 400px;
+}
+
+@media (max-width: 768px) {
+    .text-s-container {
+        margin-top: -600px;
+    }
+}
+
+.text-hero {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    z-index: -2;
+}
+
+
+
+
+
+
+
 /** Vault **/
+
+.vault-outer-container {
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+}
 
 .vault-container {
     width: 400px;
@@ -158,9 +256,9 @@ nav .vault a:hover {
 }
 
 .vault-without-logo-img, .vault-logo-img {
-    width: 70%;
+    width: 90%;
     position: absolute;
-    left: 15%;
+    left: 5%;
     top: 200px;
 }
 
@@ -204,6 +302,10 @@ nav .vault a:hover {
     }
 }
 
+.vault-text {
+    width: 100%;
+}
+
 
 /** Hero **/
 @keyframes Pulsate {
@@ -227,8 +329,11 @@ nav .vault a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    .bg-hero-image-container {
+        opacity: 0.4;
+    }
     .bg-hero-title {
-        margin-top: 150px !important;
+        margin-top: 130px !important;
     }
 }
 
@@ -330,14 +435,22 @@ nav .vault a:hover {
 
 @media only screen and (max-width: 768px) {
     .gradient-title {
-        font-size: 36px !important;
+        font-size: 32px !important;
+    }
+
+    .gradient-title br {
+        display: none;
+    }
+
+    .title-support span br {
+        display: none;
     }
 }
 
 
 .title-container {
     margin-top: 150px;
-    width: 200px;
+    width: 250px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -448,10 +561,19 @@ p {
     margin-bottom: 250px;
 }
 
+.icon-container {
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 768px) {
     .box-container {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .icon-container {
+        margin-top: 100px;
     }
 }
 
@@ -465,7 +587,7 @@ p {
     color: #fff;
     text-align: center;
     font-size: 22px;
-    margin: 30px 0;
+    margin-bottom:30px;
 }
 
 .card .content p {
@@ -580,10 +702,18 @@ p {
     background-color: red;
 }
 
+.blacklight-container {
+    position: relative; height:200px; margin-top:50px;
+}
+
+.blacklight-container-lg {
+    position: relative; height:200px; margin-top:150px;
+}
+
 .blacklight {
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: -100px;
+    width: calc(100% + 100px);
     height: 100px;
     line-height: 30vw;
     text-align: center;
@@ -599,7 +729,7 @@ p {
     left: 0;
     z-index: -1;
     height: 100%;
-    width: 100%;
+    width: 101%;
     margin: 0 auto;
     transform: scale(1);
     -webkit-filter: blur(5vw);
@@ -668,7 +798,22 @@ p {
 
 @media only screen and (max-width: 768px) {
     .network-title, .earn-title {
-        font-size: 36px !important;
+        font-size: 30px !important;
+        margin-top:0px!important;
+    }
+
+    .network-title br, .earn-title br {
+        display: none;
+    }
+
+    .earn h2 {
+        text-align: center;
+        margin-top:0px!important;
+    }
+
+    .earn .t-logo {
+        width: 30px!important;
+        margin-left:calc(50% - 15px)!important;
     }
 }
 
@@ -694,6 +839,15 @@ p {
 
 .earn {
     margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .earn {
+        flex-direction: column-reverse;
+    }
+    .earn, .network {
+        margin-bottom: 100px;
+    }
 }
 
 .earn h2 {
@@ -725,9 +879,8 @@ p {
     margin-left: 50px;
 }
 
-.earn ul span {
+.earn ul h3 {
     color: #00aeef;
-    font-size: 30px;
 }
 
 
@@ -793,14 +946,15 @@ footer p {
 
 footer img {
     position: absolute;
-    right: -40px;
+    right: 0px;
     bottom: -40px;
     width: 50%;
 }
 
 .footer-token {
     width: 350px;
-    margin: 300px auto;
+    margin: 0px auto;
+    margin-bottom: 150px;
 }
 
 .footer-token img {

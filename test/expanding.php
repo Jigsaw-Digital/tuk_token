@@ -1,7 +1,7 @@
 <div class="relative">
     <div class="tuk-container">
         <div class="title-container" style="width: unset;">
-            <h2 class="network-title" data-aos="fade-up" data-aos-delay="50">Earn TUK by expanding the<br/>eTukTuk network.</h2>
+            <h2 class="network-title" data-aos="fade-up" data-aos-delay="50">Earn TUK by expanding the<br/>eTukTuk network</h2>
         </div>
         <div class="flexbox-2 network">
             <div>
@@ -32,11 +32,6 @@
     <img src="public/network-bg.png" class="network-bg"/>
 </div>
 
-<div style="position: relative; height:200px;     margin-top: -180px;
-    padding-bottom: 100px;">
-    <div class='blacklight'></div>
-</div>
-
 <div class="relative">
     <div class="tuk-container">
         <div class="flexbox-2 earn">
@@ -49,13 +44,12 @@
                     <h2>Earn It</h2>
 
                     <ul>
-                        <li><span>Territory Partner</span></li>
+                        <li><h3>Territory Partner</h3></li>
 
-                        <li>Become an eTukTuk Territory Partner and run the nodes that will power the sustainable charging network that developing countries sorely need.
-                        </li>
+                        <li>Become a Territory Partner, manage the charging stations that will power the sustainable charging network, and earn rewards.</li>
 
-                        <li><span>Power Staking</span></li>
-                        <li>As more people join the community, the network will grow.</li>
+                        <li><h3>Power Staking</h3></li>
+                        <li>Stake your TUK, power the network, and earn rewards as the network grows. Take part in the first automotive project built on the sharing economy.</li>
 
                     </ul>
                 </div>
@@ -65,7 +59,6 @@
     <img src="public/earn-bg.png" class="earn-bg"/>
 </div>
 
-<div style="position: relative; height:200px;     margin-top: -180px;
-    padding-bottom: 100px;">
+<div class="blacklight-container-lg">
     <div class='blacklight'></div>
 </div>

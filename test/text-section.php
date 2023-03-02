@@ -1,43 +1,41 @@
 <div class="text-s-container">
     <div class="container">
-        <p class="title-support" data-aos="fade-up" data-aos-delay="150">eTukTuk <span>
-             is bringing a network of efficient charging stations to developing countries<br/>
-            across the globe, making sure that everyone has fair and equal access to equitable<br/>
-            transportation solutions that don’t pollute our planet.<br/></span>
-            <span style="color: #ffd400">By working together, we are going to change the world, one TukTuk at a time.</span>
+        <p class="title-support" data-aos="fade-up" data-aos-delay="150">TUK <span>will power the eTukTuk network to install innovative and efficient charging stations throughout developing countries and beyond.</span> TUK<span> is the reason that adopters will have fair and equal access to equitable transportation solutions that don’t pollute our planet.
+ <br/></span>
+            <span style="color: #ffd400">By working together, we are going to change the world, one eTukTuk at a time.</span>
         </p>
     </div>
 
-    <div class="title-container" style="width: unset; margin-bottom: 200px;">
-        <h2 class="gradient-title" data-aos="fade-up" data-aos-delay="50">Earn Rewards as you supply the<br/>power to change the world.</h2>
+    <div class="title-container" style="width: unset; ">
+        <h2 class="gradient-title" data-aos="fade-up" data-aos-delay="50">Earn Rewards as you supply the <br/>power to change the world</h2>
     </div>
 
     <div class="timeline">
-        <img src="public/tuktuk.png" class="tuktuk"/>
-        <div class="blue-container">
+        <img src="public/tuktuk.png" class="tuktuk" id="tuktuk"/>
+        <div class="blue-container" id="blue-container">
             <img src="public/line-blue.png" class="blue-line" width="100%" />
         </div>
         <div class="green-container">
             <img src="public/line-green.png" class="green-line" width="100%"/>
         </div>
     </div>
-    <div class="container box-container" style="margin-top: 50px; margin-bottom:50px;">
+    <div class="container">
         <div class="flexbox" style="max-width: 1613px; margin: 0px auto;">
             <div>
                 <div class="card" data-aos="fade-up" data-aos-delay="50">
                     <div class="title">
-                        Lock it In.
+                        Connect Your Wallet
                     </div>
                     <div class="content" style="color: #999; max-width: 408px;
     margin: 0px auto;">
-                        <p>Create your vault and connect your wallet to manage everything you own in one place.  </p>
+                        <p>Connect to manage everything in one place. </p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="card" data-aos="fade-up" data-aos-delay="150">
                     <div class="title">
-                        Watch the Network Grow.
+                        Watch the Network Grow
                     </div>
                     <div class="content" style="color: #999; max-width: 408px;
     margin: 0px auto;">
@@ -48,11 +46,11 @@
             <div>
                 <div class="card" data-aos="fade-up" data-aos-delay="250">
                     <div class="title">
-                        Join the rEVolution.
+                        Be Part of the rEVolution
                     </div>
                     <div class="content" style="color: #999; max-width: 408px;
     margin: 0px auto;">
-                        <p>Drive away CO2, poor health, and financial exclusion for billions. </p>
+                        <p>Drive away CO2, poor health, and financial exclusion for billions.</p>
                     </div>
                 </div>
             </div>
@@ -77,11 +75,22 @@
 
  </div>
 
-<div style="position: relative; height:200px; margin-top:50px;">
+<div class="blacklight-container">
     <div class='blacklight'></div>
 </div>
 
 <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 100) {
+                $('nav').addClass('nav-bg');
+            }
+            else {
+                $('nav').removeClass('nav-bg');
+            }
+        });
+    });
+
     $(document).ready(function() {
         var pixelToMove = 20;
         $(document).mousemove(function(e) {
@@ -109,9 +118,32 @@
 
     const window_width = window.innerWidth;
     const window_height = window.innerHeight;
+
+    $(document).ready(function() {
+        resize_tuk();
+    });
+
+    $( window ).resize(function() {
+        resize_tuk();
+    });
+
+    function resize_tuk(){
+        var blue_line = $("#blue-container").height();
+        var tuktuk = $("#tuktuk").height();
+
+        document.querySelector(
+            ".tuktuk"
+        ).style.top = `${(blue_line / 2) -  (tuktuk / 2)}px`;
+
+        document.querySelector(
+            ".timeline"
+        ).style.height = `${blue_line}px`;
+    }
+
+
     document.querySelector(
         ".green-line"
-    ).style.width = `${window_width}px`
+    ).style.width = `${window_width}px`;
 
     document.querySelector(
         ".blue-line"
@@ -146,73 +178,3 @@
 
     });
 </script>
-
-<style>
-    .timeline {
-        /*margin-top: -100px;*/
-        position: relative;
-        height: 400px;
-        overflow: hidden;
-    }
-
-    .green-container {
-        position: absolute;
-        left: 0px;
-        overflow: hidden;
-        width: 200px;
-        z-index: 999;
-    }
-
-    .blue-container {
-        position: absolute;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .green-line {
-        width: 0px;
-    }
-
-    .tuktuk {
-        height: 250px;
-        position: absolute;
-        left: 0px;
-        z-index: 9999;
-        top: 50%;
-    }
-
-    .bg-hero-title {
-        float: left;
-        text-align: left;
-        max-width: 80%;
-        margin-left: 10%;
-        margin-top: 300px;
-    }
-
-    .bg-hero-title .title-container, .bg-hero-title .title-support {
-        text-align: left;
-        margin-left: 0px;
-        width: unset;
-    }
-
-    .text-s-container {
-        position: relative;
-        /*height: 100vh;*/
-        margin-top: -575px;
-        padding-top: 400px;
-    }
-
-    @media (max-width: 768px) {
-        .text-s-container {
-            margin-top: -600px;
-        }
-    }
-
-    .text-hero {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        height: 100vh;
-        z-index: -2;
-    }
-</style>

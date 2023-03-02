@@ -7,13 +7,14 @@
 
         <div class="container">
             <p class="title-support" data-aos="fade-down" data-aos-delay="150">
-                Be a part of the community helping to wipe transportation sector<br/>
-                carbon emissions off the face of our planet, for good. Earn TUK as<br/>the network of efficient charging grows.
+                Join the network and earn rewards as you help eradicate carbon emissions off the face of our planet for good!
                 <br/><br/>
-                TUK Token brings real meaning to communities that are caught in<br/>a chokehold. Revolutionize transportation and drive the charging<br/>
-                networks that will reduce air pollution and provide financial security<br/>to billions of people.</p>
+                With TUK Token, you can earn rewards as the efficient charging network expands. Not only will you be making a positive impact on the environment and the health of people globally, but you'll also support communities that are struggling with the cost of living and financial inequality.
+                <br/><br/>
+                Let's work together to build a more rewarding future for everyone.
+            </p>
             <br/>
-            <a href="http://marcel-pirnay.be/" class="btn">
+            <a href="http://marcel-pirnay.be/" class="btn" aria-disabled="true">
                 <svg width="200" height="62">
                     <defs>
                         <linearGradient id="grad1">
@@ -23,7 +24,7 @@
                     </defs>
                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="190" height="50"></rect>
                 </svg>
-                <span>Lock It In</span>
+                <span>Connect Wallet</span>
             </a>
         </div>
     </div>

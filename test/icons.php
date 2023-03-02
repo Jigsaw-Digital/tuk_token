@@ -1,4 +1,13 @@
-<div class="container box-container tuk-container">
+<div class="container icon-container tuk-container">
+    <div class="vault-text">
+        <div class="title-container">
+            <h2 class="gradient-title" data-aos="fade-up" data-aos-delay="50">Smart Contract</h2>
+        </div>
+
+        <div class="container">
+            <p class="title-support" data-aos="fade-up" data-aos-delay="150"><span>Connect</span> Connect your existing wallet and stake your TUK.</p>
+        </div>
+    </div>
     <div class="flexbox">
         <div>
             <div class="card" data-aos="fade-up" data-aos-delay="50">
@@ -43,9 +52,7 @@
                     Wallet
                 </div>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis. </p>
+                    <p>Manage your TUK by connecting your existing, secure wallet. (Name, Eternal, GeroWallet, Flint, CardWallet, or NuFi).</p>
                 </div>
             </div>
         </div>
@@ -110,9 +117,7 @@
                     Distribution
                 </div>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis. </p>
+                    <p>Discover more about our token distribution by reading our comprehensive White Paper for more information.</p>
                 </div>
             </div>
         </div>
@@ -202,9 +207,7 @@
                     Security
                 </div>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis. </p>
+                    <p>Staking TUK tokens is backed by the underlying security and autonomy of the Cardano smart contracts</p>
                 </div>
             </div>
         </div>
