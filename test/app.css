@@ -2,7 +2,7 @@
 
 html {
     background-color: #131b1b;
-    font-family: "myriad-pro", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /** {*/
@@ -11,7 +11,7 @@ html {
 
 body {
     /*overflow-x: hidden;*/
-    font-family: "myriad-pro", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -469,6 +469,8 @@ nav .vault a:hover {
     font-weight: 100;
     line-height: 36px;
     font-size: 21px;
+    max-width: 700px;
+    margin: 0px auto;
 }
 
 @media only screen and (max-width: 768px) {

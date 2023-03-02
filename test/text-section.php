@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <a href="http://marcel-pirnay.be/" class="btn" style="width: 300px; display: block; margin: 0px auto;">
+    <a href="https://t.me/eTukTuk" target="_blank" class="btn" style="width: 300px; display: block; margin: 40px auto;">
         <svg width="300" height="62">
             <defs>
                 <linearGradient id="grad1">

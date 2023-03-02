@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="/">Terms & Conditions</a></li>
                         <li><a href="/">Privacy Policy</a></li>
-                        <li><a href="/">Cookie Policy</a></li>
+                        <li><a href="/cookie-policy.php">Cookie Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,3 +40,11 @@
     <p>©eTukTuk & Tuk Token. All content is protected</p>
     <img src="public/footer-bg.png"/>
 </footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

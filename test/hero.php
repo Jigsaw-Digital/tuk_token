@@ -14,7 +14,7 @@
                 Let's work together to build a more rewarding future for everyone.
             </p>
             <br/>
-            <a href="http://marcel-pirnay.be/" class="btn" aria-disabled="true">
+            <a href="#" class="btn" aria-disabled="true">
                 <svg width="200" height="62">
                     <defs>
                         <linearGradient id="grad1">
