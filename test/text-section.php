@@ -58,15 +58,6 @@
     </div>
 
     <a href="https://t.me/eTukTuk" target="_blank" class="btn" style="width: 300px; display: block; margin: 40px auto;">
-        <svg width="300" height="62">
-            <defs>
-                <linearGradient id="grad1">
-                    <stop offset="0%" stop-color="#ffd400"/>
-                    <stop offset="100%" stop-color="#b49909"/>
-                </linearGradient>
-            </defs>
-            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="290" height="50"></rect>
-        </svg>
         <span>Join The Community</span>
     </a>
     <img src="public/text-bg.png" class="text-hero hidden-sm"/>
@@ -150,12 +141,14 @@
     ).style.width = `${window_width}px`
 
     window.addEventListener("scroll", function () {
-        const distance = window.scrollY
+        const distance = window.scrollY;
 
 
-        document.querySelector(
-            ".bg-hero-title"
-        ).style.transform = `translateY(-${distance * 0.3}px)`
+        if ($(window).width() > 768) {
+            document.querySelector(
+                ".bg-hero-title"
+            ).style.transform = `translateY(-${distance * 0.3}px)`
+        }
 
 
         if( inViewport( document.querySelector(

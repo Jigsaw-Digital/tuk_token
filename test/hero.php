@@ -15,15 +15,6 @@
             </p>
             <br/>
             <a href="#" class="btn" aria-disabled="true">
-                <svg width="200" height="62">
-                    <defs>
-                        <linearGradient id="grad1">
-                            <stop offset="0%" stop-color="#ffd400"/>
-                            <stop offset="100%" stop-color="#b49909"/>
-                        </linearGradient>
-                    </defs>
-                    <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="190" height="50"></rect>
-                </svg>
                 <span>Connect Wallet</span>
             </a>
         </div>

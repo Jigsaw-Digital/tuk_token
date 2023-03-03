@@ -26,7 +26,7 @@ nav {
     padding-right: 10%;
     padding-top: 30px;
     z-index: 99999999;
-    top:0px;
+    top: 0px;
 }
 
 .nav-bg {
@@ -131,12 +131,6 @@ nav .vault a:hover {
 }
 
 
-
-
-
-
-
-
 /** Timeline **/
 
 .timeline {
@@ -152,7 +146,7 @@ nav .vault a:hover {
     }
 
     .tuktuk {
-        height: 75px!important;
+        height: 75px !important;
     }
 }
 
@@ -200,7 +194,7 @@ nav .vault a:hover {
 .text-s-container {
     position: relative;
     /*height: 100vh;*/
-    margin-top: -575px;
+    margin-top: -525px;
     padding-top: 400px;
 }
 
@@ -219,17 +213,10 @@ nav .vault a:hover {
 }
 
 
-
-
-
-
-
 /** Vault **/
 
 .vault-outer-container {
-    height: -moz-available;          /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    height: fill-available;
+
 }
 
 .vault-container {
@@ -257,16 +244,13 @@ nav .vault a:hover {
 
 .vault-without-logo-img, .vault-logo-img {
     width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 200px;
+    margin-left: 5%;
 }
 
 @media (max-width: 768px) {
     .vault-without-logo-img, .vault-logo-img {
         width: 100%;
-        left: 0%;
-        top: 200px;
+        margin-left: 0%;
     }
 }
 
@@ -332,6 +316,7 @@ nav .vault a:hover {
     .bg-hero-image-container {
         opacity: 0.4;
     }
+
     .bg-hero-title {
         margin-top: 130px !important;
     }
@@ -356,6 +341,22 @@ nav .vault a:hover {
     z-index: -1;
 }
 
+@media only screen and (max-width: 768px) {
+    .bg-hero-container {
+        height: unset;
+        overflow-y: hidden;
+    }
+
+    .text-s-container {
+        margin-top: 50px;
+        padding-top: 0px;
+    }
+
+    .bg-hero {
+        height: unset;
+    }
+}
+
 .bg-hero-1 {
     animation: Pulsate 20s linear infinite;
 }
@@ -374,7 +375,6 @@ nav .vault a:hover {
     position: relative;
     display: inline-block;
     width: 200px;
-    height: 50px;
     font-size: 1em;
     font-weight: bold;
     line-height: 60px;
@@ -387,39 +387,14 @@ nav .vault a:hover {
     font-weight: 900;
     font-size: 17px;
     letter-spacing: 0.045em;
+    border: 2px solid #b49908;
+    border-radius: 25px;
+    color: #8cc63f;
 }
 
-.btn svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.btn svg rect {
-/ / stroke: #b49909;
-    stroke-width: 2;
-    stroke-dasharray: 353, 0;
-    stroke-dashoffset: 0;
-    -webkit-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-
-.btn span {
-    cursor: pointer;
-    background: #7aad39;
-    background: -moz-linear-gradient(left, #96d348 0%, #7aad39 100%);
-    background: -webkit-linear-gradient(left, #96d348 0%, #7aad39 100%);
-    background: linear-gradient(to right, #96d348 0%, #7aad39 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96d348', endColorstr='#7aad39', GradientType=1);
-    color: #7aad39;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.btn:hover svg rect {
-    stroke-width: 2;
-    stroke-dasharray: 196, 543;
-    stroke-dashoffset: 547;
+.btn:hover {
+    border: 2px solid #8cc63f;
+    color: #b49908;
 }
 
 
@@ -447,6 +422,37 @@ nav .vault a:hover {
     }
 }
 
+.icon-container .title-container {
+    margin-top: -500px;
+}
+
+@media only screen and (max-width: 1750px) {
+    .icon-container .title-container {
+        margin-top: -400px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .icon-container .title-container {
+        margin-top: -300px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .icon-container .title-container {
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-container .title-container {
+        margin-top: -100px;
+    }
+
+    .icon-container .title-support {
+        margin: 20px 0;
+    }
+}
 
 .title-container {
     margin-top: 150px;
@@ -564,7 +570,7 @@ p {
 }
 
 .icon-container {
-    margin-top: 300px;
+    margin-top: 0px;
     margin-bottom: 100px;
 }
 
@@ -572,10 +578,6 @@ p {
     .box-container {
         margin-top: 100px;
         margin-bottom: 100px;
-    }
-
-    .icon-container {
-        margin-top: 100px;
     }
 }
 
@@ -589,7 +591,7 @@ p {
     color: #fff;
     text-align: center;
     font-size: 22px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .card .content p {
@@ -599,6 +601,12 @@ p {
     margin: 0px 55px;
     font-weight: 100;
     line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card .content p {
+        margin: 0px 15px;
+    }
 }
 
 .line {
@@ -705,11 +713,15 @@ p {
 }
 
 .blacklight-container {
-    position: relative; height:200px; margin-top:50px;
+    position: relative;
+    height: 200px;
+    margin-top: 50px;
 }
 
 .blacklight-container-lg {
-    position: relative; height:200px; margin-top:150px;
+    position: relative;
+    height: 200px;
+    margin-top: 150px;
 }
 
 .blacklight {
@@ -798,10 +810,11 @@ p {
     color: #8cc63f
 }
 
+
 @media only screen and (max-width: 768px) {
     .network-title, .earn-title {
         font-size: 30px !important;
-        margin-top:0px!important;
+        margin-top: 0px !important;
     }
 
     .network-title br, .earn-title br {
@@ -810,12 +823,36 @@ p {
 
     .earn h2 {
         text-align: center;
-        margin-top:0px!important;
+        margin-top: 0px !important;
+        font-size: 30px !important;
     }
 
     .earn .t-logo {
-        width: 30px!important;
-        margin-left:calc(50% - 15px)!important;
+        width: 30px !important;
+        margin-left: calc(50% - 15px) !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 368px) {
+    .network-title, .earn-title {
+        font-size: 22px !important;
+    }
+
+    .earn h2 {
+        font-size: 22px !important;
+    }
+
+    .earn .t-logo {
+        width: 20px !important;
+        margin-left: calc(50% - 10px) !important;
+        margin-bottom: 10px;
+    }
+
+    .image_icon {
+        width: 90%;
+        margin-left: 5%; 
     }
 }
 
@@ -847,6 +884,7 @@ p {
     .earn {
         flex-direction: column-reverse;
     }
+
     .earn, .network {
         margin-bottom: 100px;
     }
@@ -854,7 +892,7 @@ p {
 
 .earn h2 {
     color: #00aeef;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
 }
 
